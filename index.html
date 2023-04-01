@@ -1,818 +1,366 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Austin Miles | Computer Science Student</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Austin Miles | Computer Science Student" />
-  <meta property="og:description" content="Computer Science Student" />
-  <meta property="og:url" content="https://gizmo1479.github.io/" />
-  <meta property="og:site_name" content="Austin Miles | Computer Science Student" />
-  <meta property="article:publisher" content="https://gizmo1479.github.io/" />
-  <meta property="og:image" content="https://gizmo1479.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
-  <!--   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@varad_bhogayata" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Software Developer" />
-  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
-  <meta name="author" content="Varad Bhogayata" />
-  <meta name="description"
-    content="Software Developer with a passion for backend development and artificial intelligence." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" /> -->
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Austin Miles </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
+<body class="text-bg-dark">
 
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/Austin.JPG" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Austin's resume in a new tab"
-          href="https://gizmo1479.github.io/assets/resume/Resume_Austin_Miles.pdf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Austin
-        Miles</a><span class="black-text">Computer Science Student</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Austin's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Austin Miles.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#0471a6"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and
-                challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/austin-miles-9b65331b3/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/gizmo1479" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
-
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->
-        <p>
-          Hi, I'm Austin! I'm a computer science student at Brown University who enjoys problem-solving and coding. I
-          always
-          strive to bring 100% to the work I do.
-
-          I have mostly worked with C/C++ and Java in my studies. On my own time I am researching things IoT, Linux
-          OS, and anything Computer Systems related.
-
-          I am passionate about developing new and interesting Computer Systems that have a real-world impact!
-        </p>
-        <p>
-        <ul>
-          <li><b>Spoken Languages:</b> German, Japanese</li>
-          <li><b>Programming Languages:</b> C, C++ (proficient); Go, Java, Python (experienced)</li>
-          <!--           <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li> -->
-          <!--           <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li> -->
-          <!--           <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li> -->
-          <li><b>Tools & Technologies:</b> Bash, Git, Linux, Latex</li>
-        </ul>
-
-        </p>
-
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering,
-          which provides professional development, interesting experiences and personal growth.
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
-      </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="http://cs.brown.edu/" target="_blank"
-                      class="teal-text hoverline">Brown University Department of Computer Science</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Head Teaching Assistant</div>
-            <ul>
-              <li>
-                HTA for CSCI0170
-              </li>
-              <li>
-                Lead a team of 17 teaching assistants (with 3 others) to support 150+ students in learning introductory
-                computer science
-              </li>
-              <li>
-                Redesign course projects and interact with project code to realign the material with ever-changing
-                course goals
-              </li>
-              <li>
-                Coordinate staff meetings to gather teaching assistant and student feedback, communicate next steps with
-                the course, and organize our teaching methods once a week
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>March 2022 - Current | Providence, RI</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="http://cs.brown.edu/" target="_blank"
-                      class="teal-text hoverline">Brown University Department of Computer Science</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Systems, Programmer, Operator, Consultant (SPOC)</div>
-            <ul>
-              <li>
-                Manage and maintain the computer science department during nights, holidays, and weekends for at least 5
-                hours a week
-              </li>
-              <li>
-                Upgrade the CS department software and systems
-              </li>
-              <li>
-                On-call for acute problems, like file system downtime, power outages, or network issues
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2022 - Current | Providence, RI</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="http://cs.brown.edu/" target="_blank"
-                      class="teal-text hoverline">Brown University Department of Computer Science</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Undergraduate Teaching Assistant</div>
-            <ul>
-              <li>
-                Developed course content for CSCI0170 and CSCI0200 (introductory CS courses) along with in-depth
-                revision of Class Projects
-              </li>
-              <li>
-                Held weekly lab and office hours to assist students with debugging and conceptual understanding
-              </li>
-              <li>
-                Tested class project code and developed handouts to prepare for assignment releases
-              </li>
-              <li>
-                Spent 4 hours each week offering students feedback and criticism on their assignments
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Sep 2021 - May 2022 | Providence, RI</span>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-AI.jpg" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Weenix<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Simple Operating System Based off of Early UNIX
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C, QEMU, fsmaker</li>
-                  <li>Developed a primitive thread scheduler with a one-to-one kernel thread to process model which
-                    allows processes to run</li>
-                  <li>Coded a tty driver with a functional line discipline along with 2 simple memory devices (/dev/null
-                    and /dev/zero)</li>
-                  <li>Added in a Virtual File System which supports multiple system calls common to UNIX</li>
-                  <li>Implemented S5FS, a file system based off the original UNIX file system</li>
-                  <li>Integrated virtual memory into the codebase. THis included developing data structures and adding
-                    in code to manage userspace processes</li>
-                </ul>
-                <!--                 <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank"
-                    data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/music-player" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- 1. Django Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">TCP/IP<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Networking Stack and Simple Router in C
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C</li>
-                  <li>Constructed a link layer (layer 2 of OSI) by encapsulating IP packets in UDP</li>
-                  <li>Created a router like node for the network layter. It implements RIP, packet forwarding, and
-                    packet delivering to allow a collection of nodes to talk to each other by referenced RFC 791</li>
-                  <li>Database implemented as a binary-tree with fine-grained locking</li>
-                  <li>Coded the TCP protocol to allow 1MB files to be sent reliably between two nodes by referencing RFC
-                    793</li>
-
-                </ul>
-                <!--                 <div class="card-action">
-                            <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank"
-                              data-position="top" data-tooltip="View Online"
-                              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                class="fa fa-external-link"></i></a>
-                            <a aria-label="Visit the GitHub repo for  project"
-                              href="https://github.com/varadbhogayata/django-local-library" target="_blank" data-position="top"
-                              data-tooltip="View Source"
-                              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                class="fa fa-github"></i></a>
-                          </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Snowcast<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Music Streaming Server in C++
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C++, TCP and UDP</li>
-                  <li>Implemented a simulated radio station that streams out data to specific UDP ports in Linux</li>
-                  <li>Established a TCP server and client connection which both follow a reusable network protocol</li>
-                  <li>Built a multi-threaded backend in which the server supports multiple "station" threads that send
-                    out data to clients</li>
-                </ul>
-                <!--                 <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank"
-                    data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/music-player" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Search<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Simple search engine coded in Scala
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Scala, Java Libraries</li>
-                  <li>Implemented basic indexer and querier that is space and time efficient with extensive use of
-                    hashmaps</li>
-                  <li>Uses Google's PageRank algorithm with the ability to suggest files based on certain inputs</li>
-                  <li>Supports reading in information from formatted XML files</li>
-                </ul>
-                <!--                 <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank"
-                    data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- VQA -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png"
-                  style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Shell<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Interactive computer terminal coded in C
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Included extensive error checking so user input does not crash Shell</li>
-                  <li>Supports various builtin commands: cd, cat, rm, ln, exit, echo. While also support linux processes
-                    via path name</li>
-                  <li>File Redirection symbols work in any order</li>
-                  <li>Jobs and processes can be controlled through terminal with control of user-sent signals</li>
-                </ul>
-                <!--                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/c3x3.png" class="responsive-img" />C
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/C++.jpg" class="responsive-img" />C++
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/java_logo.jpg" class="responsive-img" />Java
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/linux.jpeg" class="responsive-img" /> Linux
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
-                      </div>
+            <nav class="navbar navbar-dark sticky-top bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://github.com/gizmo1479/">Github</a>
+                    <div class="navbar-expand">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Algorithms (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </nav>
+
+            <!-- ABOUT -->
+            <div class="container">
+                <div class="border-bottom p-2 m-2">
+                    <h2 id="About"> About </h2>
+                </div>
+                <div class="row row-cols-2 text-left p-4">
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="resources/Austin.jpg" class="rounded-circle img-fluid w-75 border" alt="pic">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <h4> <b>beep boop :D, I'm Austin</b></h4>
+                            <p> I love all things computers, whether it be systems, linux, graphics, or video games!</p>
+                            <p>
+                                My passion when programming is working in lower level languages working on <b>cool</b>
+                                computer
+                                systems: previously, I've worked on operating systems, computer networks, and some fun
+                                computer
+                                graphics projects.
+                            </p>
+                            <p>
+                                I'm currently a Junior at Brown University pursuing a Sc.B in Computer Science. Outside
+                                of
+                                computers, you can find me reading or cooking some (hopefully) delicious food.
+                            </p>
+
+                            <div class="row row-cols-4 p-4">
+                                <div class="col">
+                                    <a class="btn btn-primary" href="resources/Austin_Miles_Resume-3.pdf" role="button" data-bs-toggle="tooltip"
+                                        data-bs-title="Resume">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/austin-miles-9b65331b3/" role="button" data-bs-toggle="tooltip"
+                                        data-bs-title="LinkedIn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="mailto:austin_miles@brown.edu" role="button" data-bs-toggle="tooltip"
+                                        data-bs-title="Email">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="https://github.com/gizmo1479/" role="button" data-bs-toggle="tooltip"
+                                        data-bs-title="Github">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p>
+                                <b>Programming Languages:</b>
+                                <ul>
+                                    <li><b>Proficient:</b> C/C++</li>
+                                    <li><b>Intermediate:</b> Java, Go, Typescript + React, Python, ARM/x86 Assembly</li>
+                                </ul>
+
+                                <b>Technologies:</b>
+                                <ul>
+                                    <li><b>Proficient:</b> Linux, Git</li>
+                                    <li><b>Intermediate:</b> Bash, G Suite, Wireshark</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div> -->
 
-      </div>
-    </section>
+            <hr>
+            <div class="container">
+                <div class="border-bottom p-2 m-2">
+                    <h2 id="Experience"> Experience </h2>
+                </div>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.brown.edu/" target="_blank"
-                      class="teal-text hoverline">Brown University</a></span>
-                </p>
-                <p class="brown-text">Providence, RI</p>
-                <p>
-                  <b>Degree: </b>Bachelor's of Science in Computer Science
-                  <br>
-                  <b>GPA: </b> 3.8/4.0
-                </p>
+                <div class="row row-cols-2 p-4">
+                    <div class="card bg-dark">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title"> Head Teaching Assistant for CSCI0170</h5>
+                            <h6 class="text-muted"> Brown University Dept. of CS, Mar. 2022 - Jan. 2023</h6>
+                            <p class="card-text"> Being a Head Teaching Assistant (HTA) for Brown's CS department meant
+                                that I gained a lot of experience leading and running a course with the professor and
+                                fellow HTAs.</p>
+                            <p class="card-text"> We lead a team of 19 TAs to support the ~150 students taking CSCI0170,
+                                an introductory course in CS. I helped redesign some of the course projects and helped
+                                some TAs write some needed code. Lastly, I helped coordinate staff meetings which to
+                                communicate our next steps with the course with the UTAs.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title"> Systems, Programmer, Operator, Consultant (SPOC)</h5>
+                            <h6 class="text-muted"> Brown University Dept. of CS, May 2022 - Present</h6>
+			    <p class="card-text"> SPOCs are the undergraduate assistants for the System Administrators (technical staff) of Brown's CS Department. We essentially have the capabilities to do anything a System admin can do. We manage any tickets sent to the problem email and assist with the maintenance of Department hardware and software. Additionally, we monitor the department systems on nights, weekends, and holidays. A further description can be found <a src="https://cs.brown.edu/people/staff/spoc">here</a></p>
+			    <p class="card-text">Being a SPOC has been a wonderful time! We are really given the chance to learn a lot about Linux and general System Administration. I've had the chance to respond to many tickets and work on many projects. For instance, I helped out the the department's local VM image: CS Home Edition. Additionally, I've helped setup the backend for websites and added the ability to have any machine you login to know the desktop environment (gnome, xfce, etc.) you used at the last machine. </p>
+                        </div>
+                    </div>
+		</div>
+		<div class="row row-cols-1 p-4">
+                    <div class="card bg-dark">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title"> Teaching Assistant: CSCI00170, CSCI0200, CSCI1670/1690</h5>
+                            <h6 class="text-muted"> Brown University Dept. of CS, Sep 2021 - May 2022; Jan. 2023 - May 2023</h6>
+			    <p class="card-text"> CS TAs at Brown truly care about the work they are doing. Someone becomes a TA because they loved taking a course and want to learn more, but, more importantly, they want to help the future students taking the course</p>
+			    <p class="card-text"> During my time as UTA, I've held weekly lab and office hours for students. I've test class projects and prepared assignments to be released. I've even spent the grueling hours grading student assignments. Ultimately though, I love interacting with students and teaching them about topics I'm passionate about.</p>
+                        </div>
+                    </div>
 
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Computer Systems</li>
-                    <li>Linear Algebra</li>
-                    <li>Data Structures and Algorithms</li>
-                  </ul>
-                  </p>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- PROJECTS -->
+            <div class="container">
+                <div class="border-bottom p-2 m-2">
+                    <h2 id="Projects"> Projects </h2>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-bg-dark">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project1"
+                            aria-expanded="false" aria-controls="project1">
+                            <h3>Weenix</h3>
+                        </button>
+                        <div class="collapse" id="project1">
+                            <div class="card card-body bg-dark">
+                                <div class="row row-cols-2 text-left p-2">
+
+                                    <div class="col">
+                                        <img class="img-fluid" src="resources/weenix.png" alt="Alt for project pic">
+                                    </div>
+
+                                    <div class="col">
+                                        <h5> <b>Weenix</b></h5>
+                                        <h6 class="text-muted"> Operating System written in C </h6>
+                                        <p> Weenix is the labor of my time in<a
+                                                src="https://brown-cs1690.github.io/brown-cs167-s22/#/"> CS1670/1690</a>
+                                            (Operating Systems)
+                                            at Brown. It was a semester long project dedicated to coding an OS,
+                                            similar to the original UNIX OS, in C. To some, Weenix being written in C is
+                                            a given (real operating systems are written in C ;)), but I'm just excited
+                                            about Rust being introduced to the Linux kernel.</p>
+                                        <p>
+                                            Weenix consisted of five semi-projects:
+                                        <ul>
+                                            <li>
+                                                <b>Processes:</b> The base of the Weenix: a single-threaded kernel with support for processes to be spawned and scheduled
+                                            </li>
+                                            <li>
+                                                <b>Drivers:</b> Most of the work in coding the TTY drivers and line-discipline. The TTY supports 128 characters in the buffer. On top of this are memory devices and small support for SATA drives
+                                            </li>
+                                            <li>
+                                                <b>Virtual File System (VFS):</b> This project setup the level of abstraction that sits on top of any lower-level filesystem implementations. Very similar to the system calls that Linux implements: do_open, do_write, do_read, and more!
+                                            </li>
+                                            <li>
+                                                <b>System Five File System (S5FS):</b> Low-level implementation of a cutdown version of the early System Five FS built below the Virtual File System.
+                                            </li>
+                                            <li>
+                                                <b>Virtual Memory:</b> This was the part that tied together the whole OS and finally gave us userland processes. I wrote data structures relevant to Virtual Memory and worked on the paging system (shadow pages for the win) among other things.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-bg-dark">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project2"
+                            aria-expanded="false" aria-controls="project2">
+                            <h3>IP/TCP</h3>
+                        </button>
+                        <div class="collapse" id="project2">
+                            <div class="card card-body bg-dark">
+                                <div class="row row-cols-2 text-left p-2">
+
+                                    <div class="col">
+                                        <img class="img-fluid w-75" src="resources/tcp.png" alt="Alt for project pic">
+                                    </div>
+
+                                    <div class="col">
+                                        <h5> <b>IP/TCP</b></h5>
+                                        <h6 class="text-muted"> Networking Stack built in C</h6>
+                                        <p> This was a 2/3 semester long project to built an IP/TCP stack from the UDP-based ground-up.</p>
+                                        <p> Instead of dealing with a complicated OSI Level-2 hardware implementation - we encapsulated our packets in UDP.</p>
+                                        <p> We started with creating a "node" program - which acted almost like a router. It implemented IP packet sending and forwarding - each node could connect to others node and used RIPv4 to communicate.</p>
+                                        <p> On top of IP, we implemented the classic TCP Protocol and were able to send 1MB files between nodes reliably.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-bg-dark">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project3"
+                            aria-expanded="false" aria-controls="project3">
+                            <h3>Color-sensing RC Car</h3>
+                        </button>
+                        <div class="collapse" id="project3">
+                            <div class="card card-body bg-dark">
+                                <div class="row row-cols-2 text-left p-2">
+
+                                    <div class="col">
+                                        <img class="img-fluid" src="resources/car.jpg" alt="Alt for project pic">
+                                    </div>
+
+                                    <div class="col">
+                                        <h5> <b>Color-sensing RC Car</b></h5>
+                                        <h6 class="text-muted"> RC Car made with an Arduiono and coded in Arduino
+                                            (basically C++) </h6>
+                                        <p> As part of my embedded software course, some friends and I created a
+                                            Color-sensing RC Car with an Arduino</p>
+                                        <p> The car is remote controlled by the button array on a second Arduino we call
+                                            the transmitter. The car requires a WiFi connection as we use the local
+                                            network to send data from the transmitter to the car. Each button represents
+                                            a direction and on a change in state
+                                            (!pressed -> pressed and vice versa) triggers an Interrupt Service Routine
+                                        </p>
+                                        <p> The car features a watchdog for safety, motor drivers which are PWM
+                                            controlled, and it's independently powered.</p>
+                                        <p> Per the "color-sensing" capability, the car responds to color that it
+                                            detects, using a color sensor, below it. It will stop for 2 seconds on Red
+                                            (with a 5 second timer before stopping again), slow down on blue, and speed
+                                            up on green.</p>
+                                        <p> Lastly, we wrote a report for our project. It contains safety and liveness
+                                            concerns, project requirements, finite state machines for the receiver and
+                                            transmitterm and more!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-bg-dark">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project4"
+                            aria-expanded="false" aria-controls="project4">
+                            <h3>Planet Generation</h3>
+                        </button>
+                        <div class="collapse" id="project4">
+                            <div class="card card-body bg-dark">
+                                <div class="row row-cols-2 text-left p-2">
+
+                                    <div class="col">
+                                        <img class="img-fluid" src="resources/PlanetGen.png" alt="Alt for project pic">
+                                    </div>
+
+                                    <div class="col">
+                                        <h5> <b>Planet Generation</b></h5>
+                                        <h6 class="text-muted">Custom Planet Generator written in C++ using OpenGL and
+                                            Qt</h6>
+                                        <p>As a final project, my friends and I wrote a planet generator using the
+                                            mystical GPU powers of OpenGL.</p>
+                                        <p>To create your own planet, you can use an on-canvas brush to draw what
+                                            terrain you want to be on the planet. Then we take the brush data, create a
+                                            <b>height map</b> interspersed with <b>perlin noise</b>, and displace the
+                                            vertices of a sphere to create the planet.
+                                        </p>
+                                        <p>Currently, the planet supports three terrains types (with coloring dependent
+                                            on type): water (the base sphere coordinates), flatland (slightly spiky and
+                                            green), and mountains. On top of this, I implemented a <b>skybox</b> behind
+                                            the planet and a custom <b>toon shader</b> to make the planet look nice :)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-bg-dark">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project5"
+                            aria-expanded="false" aria-controls="project5">
+                            <h3>Raytracer</h3>
+                        </button>
+                        <div class="collapse" id="project5">
+                            <div class="card card-body bg-dark">
+                                <div class="row row-cols-2 text-left p-2">
+
+                                    <div class="col">
+                                        <img class="img-fluid" src="resources/ray.png" alt="Alt for project pic">
+                                    </div>
+
+                                    <div class="col">
+                                        <h5> <b>Raytracer</b></h5>
+                                        <h6 class="text-muted"> C++ Raytracer using Qt Framework</h6>
+                                        <p> A really satisfying project, this was a C++ Raytracer developed from scratch
+                                            with the help of the Qt Framework.</p>
+                                        <p> The Raytracer supports: <b>shadows</b>, <b>recursive reflections and
+                                                refraction</b>, and
+                                            <b>texture mapping</b>. The raytracer was done using <b>Phong
+                                                Illumination</b>, and we load in primitives to the scene with a custom
+                                            scenegraph parser.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                 </ul>
-              </div>
             </div>
 
 
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Austin" data-position="top" data-tooltip="Call Austin"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Austin">+13362000954</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Austin" href="mailto:austin_miles@brown.edu" target="_blank" data-position="top"
-            data-tooltip="Email Austin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Austin" href="mailto:austin_miles@brown.edu"
-              class="hoverline">austin_miles@brown.edu</a></a>
-        </p>
-        <p>
-          <a aria-label="View Austin on GitHub" href="https://github.com/gizmo1479" target="_blank" data-position="top"
-            data-tooltip="View Austin on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Austin on Github" href="https://github.com/gizmo1479" class="hoverline"
-              target="_blank">https://github.com/gizmo1479</a></a>
-        </p>
-        <p>
-          <a aria-label="View Austin on LinkedIn" href="https://www.linkedin.com/in/austin-miles-9b65331b3/"
-            target="_blank" data-position="top" data-tooltip="View Austin on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Austin on LinkedIn"
-              href="https://www.linkedin.com/in/austin-miles-9b65331b3/" class="hoverline"
-              target="_blank">linkedin.com/in/austin-miles-9b65331b3/</a></a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Developer", "Fast Learner"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous">
+                </script>
+            <!-- init tooltips -->
+            <script>
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
 </body>
 
 </html>
